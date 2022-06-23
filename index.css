@@ -1,0 +1,78 @@
+/* Write your code here. */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+}
+
+.notification-bg-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.heading {
+  font-family: "Roboto";
+  color: #0f172a;
+  font-size: 30px;
+  font-weight: bold;
+}
+.notification-list-container {
+  width: 80%;
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  padding-left: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.information {
+  background-color: #0b69ff;
+}
+.success {
+  background-color: #2dca73;
+}
+.warning {
+  background-color: #ffb800;
+}
+.error {
+  background-color: #ff0b37;
+}
+
+.img {
+  width: 20px;
+  margin-right: 20px;
+}
+
+.message {
+  font-family: "Roboto";
+  color: #ffffff;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .notification-list-container {
+    width: 60%;
+  }
+  .heading {
+    font-size: 48px;
+  }
+  .notification {
+    margin-bottom: 45px;
+    padding-left: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .notification-list-container {
+    width: 50%;
+  }
+}
